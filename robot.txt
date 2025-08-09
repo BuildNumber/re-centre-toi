@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.re-centre-toi.be/sitemap.xml

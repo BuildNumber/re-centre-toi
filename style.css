@@ -1,7 +1,162 @@
-
+/* === Base typographie === */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
 }
-h1, h2 {
-    font-weight: 600;
+h1, h2, h3, h4, h5 { font-weight: 600; color: #111; }
+
+/* === Carrousels === */
+.carousel-item img,
+.carousel-item video {
+    max-height: 600px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+/* === Onglets génériques (Bootstrap) === */
+.nav-tabs .nav-link {
+    color: #555;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+}
+.nav-tabs .nav-link.active {
+    color: #000;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* === Menu principal Découverte / Tarifs / Conditions === */
+.nav-tabs.main-menu {
+    border-bottom: 2px solid #7a5c45;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.nav-tabs.main-menu .nav-link {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4d3a2f;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    transition: color .3s ease;
+}
+.nav-tabs.main-menu .nav-link.active {
+    color: #7a5c45;
+    border-bottom: 3px solid #7a5c45;
+}
+.nav-tabs.main-menu .nav-link:hover { color: #7a5c45; }
+
+/* === Tarifs (cartes + blocs info) === */
+.tarif-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.tarif-card h5 {
+    background-color: #f3e9df;
+    padding: .75rem;
+    font-size: 1.6rem;
+    border-top: 4px solid #d6b99d;
+    border-radius: .5rem .5rem 0 0;
+    margin-bottom: 1rem;
+    color: #5a4033;
+    text-align: center;
+}
+.tarif-card ul { list-style: none; padding-left: 0; }
+.tarif-card ul li {
+    padding: .4rem 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.tarif-card img { display: block; margin-bottom: 0; }
+
+.tarif-info-block {
+    background-color: #fdf7f2;
+    border-left: 4px solid #d6b99d;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    font-style: italic;
+}
+
+/* === Ruban d’infos (Facebook / Adresse / Tel) === */
+.info-ribbon {
+    background: #efe1d6;              /* crème, proche des bannières tarifs */
+    border-bottom: 1px solid #e6e6e6;
+}
+.ribbon-link { color: #4d3a2f; text-decoration: none; }
+.ribbon-link:hover { text-decoration: underline; color: #7a5c45; }
+
+/* === Offcanvas Contact & Horaires === */
+.offcanvas.offcanvas-end { width: 360px; }
+@media (max-width: 400px) { .offcanvas.offcanvas-end { width: 100%; } }
+
+/* Couleurs lisibles dans le panneau */
+.offcanvas-body { color: #4d3a2f; }
+.offcanvas-body a { color: #4d3a2f; text-decoration: none; }
+.offcanvas-body a:hover { color: #7a5c45; text-decoration: underline; }
+.offcanvas-body i { color: #7a5c45; }
+
+/* Liens contact (icônes + texte) */
+.contact-links li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem 0;
+}
+.contact-links i { color: #6c757d; }
+
+/* Table horaires dans l’offcanvas */
+.opening-hours-table td {
+    padding: .2rem .4rem;
+    white-space: nowrap;
+    font-size: .95rem;
+}
+
+/* Bouton flottant “Contact & horaires” (optionnel) */
+.fab-contact {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1050;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+.fab-contact i { font-size: 1.25rem; }
+
+/* === Section Conditions : image centrée + largeur réduite et pas de ligne au-dessus === */
+#condition { border-top: none; margin-top: 0; padding-top: 0; }
+#condition .tarif-card { border-top: none; }
+#condition .tarif-card img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+/* === Footer === */
+footer small { font-size: .85rem; }
+
+/* === Responsive === */
+@media (max-width: 576px) {
+    .tarif-card { padding: 1rem; }
+    .carousel-item img,
+    .carousel-item video { max-height: 300px; }
 }

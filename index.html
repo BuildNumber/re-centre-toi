@@ -1,51 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Re Centre Toi – Spa Privatif à La Louvière</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Re Centre Toi – Spa Privatif à La Louvière</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Balises SEO de base -->
+  <title>Re-centre-toi – Spa privatif et centre de soins à La Louvière</title>
+  <meta name="description" content="Spa privatif: Sauna, hammam, jacuzzi, piscine extérieure couverte, réflexologie et massages.">
+  <meta name="keywords" content="spa privatif, bien-être, massages, nuitée, relaxation, La Louvière, centre de soin, re-centre-toi, réflexologie, jacuzzi, hammam, Sauna, piscine ">
+  <meta name="author" content="Re-centre-toi">
+
+  <!-- Pour les réseaux sociaux (Open Graph) -->
+  <meta property="og:title" content="Re-centre-toi">
+  <meta property="og:description" content="Spa privatif: Sauna, hammam, jacuzzi, piscine extérieure couverte, réflexologie et massages.">
+  <meta property="og:image" content="https://www.re-centre-toi.be/images/logo.png">
+  <meta property="og:url" content="https://www.re-centre-toi.be">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Re-centre-toi">
+  <meta name="twitter:description" content="Spa privatif: Sauna, hammam, jacuzzi, piscine extérieure couverte, réflexologie et massages.">
 </head>
 <body>
 
 <header class="text-center p-5 bg-dark text-white">
-    <img src="logo/logo.jpg" alt="Logo Re Centre Toi" class="img-fluid mb-3" style="max-height: 150px;">
-    <h1>Re Centre Toi</h1>
-    <p class="lead">Spa privatif – La Louvière</p>
+  <img src="logo/logo.jpg" alt="Logo Re Centre Toi" class="img-fluid mb-4" style="max-height: 500px;">
+  <p class="lead">Spa privatif: Sauna, hammam, jacuzzi, piscine extérieure couverte, réflexologie et massages.</p>
 </header>
 
-<section class="container py-5">
-    <h2 class="text-center mb-4">Un moment de détente rien que pour vous</h2>
-    <p class="text-center">
-        Plongez dans un espace de bien-être privatif et ressourçant, au cœur de La Louvière.
-        Profitez de nos installations modernes dans un cadre intime, idéal pour se reconnecter à soi-même.
-    </p>
+
+
+<!-- Ruban compact (non sticky) -->
+<section class="info-ribbon">
+  <div class="container d-flex flex-wrap justify-content-center align-items-center gap-3 py-2">
+    <a class="ribbon-link" href="https://www.facebook.com/p/Re-Centre-Toi-61563486326600/" target="_blank" rel="noopener">
+      <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a class="ribbon-link" href="https://www.google.com/maps/search/?api=1&query=Rue+Duchâteau+77,+La+Louvière" target="_blank" rel="noopener">
+      <i class="bi bi-geo-alt"></i> Rue Duchâteau 77, 7100 La Louvière
+    </a>
+    <a class="ribbon-link" href="tel:+32471920334">
+      <i class="bi bi-telephone"></i> 0471 92 03 34
+    </a>
+
+    <!-- Bouton pour ouvrir les horaires -->
+    <button class="btn btn-sm btn-outline-dark ms-lg-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasContact">
+      <i class="bi bi-clock"></i> Horaires
+    </button>
+  </div>
 </section>
 
+<!-- Panneau offcanvas Contact & Horaires -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasContact" aria-labelledby="offcanvasContactLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasContactLabel">Contact & horaires</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled contact-links mb-3">
+      <li><i class="bi bi-facebook"></i> <a href="https://www.facebook.com/p/Re-Centre-Toi-61563486326600/" target="_blank" rel="noopener">Page Facebook</a></li>
+      <li><i class="bi bi-geo-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query=Rue+Duchâteau+77,+La+Louvière" target="_blank" rel="noopener">Rue Duchâteau 77, 7100 La Louvière</a></li>
+      <li><i class="bi bi-telephone"></i> <a href="tel:+32471920334">0471 92 03 34</a></li>
+    </ul>
+
+    <div class="fw-semibold mb-1"><i class="bi bi-clock"></i> Horaires</div>
+    <table class="table table-sm table-borderless mb-0 opening-hours-table">
+      <tbody>
+      <tr><td>lundi</td>     <td class="text-end">09:30 – 21:30</td></tr>
+      <tr><td>mardi</td>     <td class="text-end">09:30 – 21:30</td></tr>
+      <tr><td>mercredi</td>  <td class="text-end">09:30 – 11:30</td></tr>
+      <tr><td>jeudi</td>     <td class="text-end">09:30 – 21:30</td></tr>
+      <tr><td>vendredi</td>  <td class="text-end">09:30 – 21:30</td></tr>
+      <tr><td>samedi</td>    <td class="text-end">09:30 – 21:30</td></tr>
+      <tr><td>dimanche</td>  <td class="text-end text-danger fw-semibold">Fermé</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Bouton flottant (optionnel) pour ouvrir l’offcanvas à tout moment -->
+<button class="fab-contact btn btn-primary rounded-circle" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasContact" aria-label="Contact & horaires">
+  <i class="bi bi-chat-text"></i>
+</button>
 <section class="container py-5">
-    <h2 class="text-center mb-4">Galerie photos</h2>
-    <div class="row">
-        <div class="col-md-4 mb-4"><img src="images/image_1.jpg" class="img-fluid rounded shadow"></div><div class="col-md-4 mb-4"><img src="images/image_10.jpg" class="img-fluid rounded shadow"></div><div class="col-md-4 mb-4"><img src="images/image_100.jpg" class="img-fluid rounded shadow"></div><div class="col-md-4 mb-4"><img src="images/image_101.jpg" class="img-fluid rounded shadow"></div><div class="col-md-4 mb-4"><img src="images/image_102.jpg" class="img-fluid rounded shadow"></div><div class="col-md-4 mb-4"><img src="images/image_103.jpg" class="img-fluid rounded shadow"></div>
+  <ul class="super-menu nav nav-tabs main-menu mb-4" id="mainTab" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#lieux" type="button" role="tab">Découverte des lieux</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tarifs" type="button" role="tab">Tarifs</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#condition" type="button" role="tab">Réglement & condition</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="mainTabContent">
+    <div class="tab-pane fade show active" id="lieux" role="tabpanel">
+      <ul class="nav nav-tabs justify-content-center mb-4" id="galleryTab" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" id="images-tab" data-bs-toggle="tab" data-bs-target="#images" type="button" role="tab">Images</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab">Vidéos</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="galleryTabContent">
+        <div class="tab-pane fade show active" id="images" role="tabpanel">
+          <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-inner-js"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="videos" role="tabpanel">
+          <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-videos-js"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
 
-<section class="container py-5">
-    <h2 class="text-center mb-4">Découvrez en vidéo</h2>
-    <div class="row">
-        <div class="col-md-6 mb-4"><video controls class="w-100 rounded shadow"><source src="videos/video_1.mp4" type="video/mp4"></video></div><div class="col-md-6 mb-4"><video controls class="w-100 rounded shadow"><source src="videos/video_2.mp4" type="video/mp4"></video></div>
+    <div class="tab-pane fade" id="tarifs" role="tabpanel">
+      <ul class="nav nav-tabs justify-content-center mb-4" id="tarifTab" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#evasion" type="button">Évasions bien-être</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#massages" type="button">Massages</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nuitees" type="button">Nuitées</button>
+        </li>
+      </ul>
+      <div class="tab-content px-md-5">
+        <div class="tarif-card tab-pane show active fade text-center" id="evasion">
+          <img src="images/tarif/tarif_banner.jpg" class="img-fluid" alt="banner" loading="lazy">
+          <img src="images/tarif/tarif_wellness_banner.jpg" class="img-fluid " alt="wellness banner" loading="lazy">
+          <img src="images/tarif/tarif_wellness.jpg" class="img-fluid rounded shadow" alt="Tarifs Évasion bien-être" loading="lazy">
+        </div>
+        <div class="tarif-card tab-pane fade text-center" id="massages">
+          <img src="images/tarif/tarif_banner.jpg" alt="banner" class="img-fluid" loading="lazy">
+          <img src="images/tarif/tarif_massage_banner.jpg" alt="massage banner" class="img-fluid" loading="lazy">
+          <img src="images/tarif/tarif_massage.jpg" alt="tarifs massage" class="img-fluid rounded shadow" loading="lazy">
+        </div>
+        <div class="tarif-card tab-pane fade text-center" id="nuitees">
+          <img src="images/tarif/tarif_banner.jpg" alt="banner" class="img-fluid" loading="lazy">
+          <img src="images/tarif/tarif_night_banner.jpg" alt="banner night" class="img-fluid" loading="lazy">
+          <img src="images/tarif/tarif_night.jpg"  alt="tarifs nuitées" class="img-fluid rounded shadow" loading="lazy">
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="bg-light py-5 text-center">
-    <h2>Contact & Réseaux</h2>
-    <p>Suivez-nous sur Facebook :</p>
-    <a class="btn btn-primary" href="https://www.facebook.com/p/Re-Centre-Toi-61563486326600/" target="_blank">Page Facebook</a>
-</section>
+<div class="tab-pane fade" id="condition" role="tabpanel">
+  <div class="tarif-card text-center">
+    <img src="images/condition/disclaimer.jpg" loading="lazy" class="img-fluid rounded shadow" alt="Règlement et conditions">
+  </div>
+</div>
 
 <footer class="text-center text-muted py-4 bg-dark text-white">
-    <small>&copy; 2025 Re Centre Toi – Spa privatif à La Louvière</small>
+  <small>&copy; 2025 Re Centre Toi – Spa privatif à La Louvière</small>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const carouselInner = document.getElementById("carousel-inner-js");
+  for (let i = 1; i <= 105; i++) {
+    const div = document.createElement("div");
+    div.className = "carousel-item" + (i === 1 ? " active" : "");
+    div.innerHTML = `<img src="images/image_${i}.jpg" loading="lazy" class="d-block w-100 rounded shadow" alt="Image ${i}">`;
+    carouselInner.appendChild(div);
+  }
+
+  const videoCarousel = document.getElementById("carousel-videos-js");
+  for (let i = 1; i <= 5; i++) {
+    const div = document.createElement("div");
+    div.className = "carousel-item" + (i === 1 ? " active" : "");
+    div.innerHTML = `
+      <div class="d-flex justify-content-center">
+        <video controls class="w-100 rounded shadow" style="max-width: 800px;" preload="none" loading="lazy" poster="videos/preview_${i}.png">
+          <source src="videos/video_${i}.mp4" type="video/mp4">
+        </video>
+      </div>`;
+    videoCarousel.appendChild(div);
+  }
+
+  const lazyVideos = document.querySelectorAll("video source[data-src]");
+  if ("IntersectionObserver" in window) {
+    const videoObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const source = entry.target;
+          source.src = source.dataset.src;
+          source.parentElement.load();
+          videoObserver.unobserve(source);
+        }
+      });
+    });
+    lazyVideos.forEach(video => {
+      videoObserver.observe(video);
+    });
+  }
+</script>
 </body>
 </html>
